@@ -8,7 +8,7 @@ https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.11
 - Type `y` then enter key in any prompts!
 ```
 yes | pkg update && pkg upgrade
-yes | pkg install libjansson wget
+yes | pkg install libjansson wget vim
 ```
 3. Download ccminer, config, start:
 ```
@@ -25,7 +25,7 @@ chmod +x ccminer start.sh
 - Address & worker name is near the bottom of the config.json in format `address here.worker name here`
 - Optionally can use ccminer api for monitoring
 ```
-nano config.json
+vim config.json
 ```
 2. Start ccminer with:
 ```
