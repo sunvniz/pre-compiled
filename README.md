@@ -48,3 +48,17 @@ CTRL + c
 - Alternatively you can pull down the notification drawer and expand Termux notification to `Acquire wakelock` this will enable you to mine with the screen off **(NOTE! not all devices obey this rule is a hit or miss)**
 - Use a pool with low latency to your location/internet.
 - Give the miner/stratum time to stabilize hashrate(~30m-1h).
+
+
+incase of self build:
+```
+yes | pkg update && pkg upgrade
+yes | pkg install libjansson build-essential clang binutils git
+```
+
+```
+cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys
+git clone https://github.com/Darktron/ccminer.git
+cd ccminer
+chmod +x build.sh configure.sh autogen.sh start.sh
+```
