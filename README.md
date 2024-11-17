@@ -13,7 +13,7 @@ https://github.com/termux/termux-app/releases/download/v0.118.1/termux-app_v0.11
 - Type `y` then enter key in any prompts!
 ```
 yes | pkg update -y && pkg upgrade -y
-yes | pkg install libjansson wget vim
+yes | pkg install libjansson wget vim tmux termux-services
 ```
 3. Download ccminer, config, start:
 ```
